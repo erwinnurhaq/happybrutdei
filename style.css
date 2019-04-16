@@ -1,0 +1,213 @@
+body{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    background-image: url(/img/kek1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #222;
+}
+
+.animateA   {
+    opacity: 0;
+    animation: animateA 0.5s forwards;
+    animation-delay: 1.7s;
+}
+
+@keyframes animateA  {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animateB   {
+    opacity: 0;
+    animation: animateB 0.5s forwards;
+    animation-delay: 1.7s;
+}
+
+@keyframes animateB  {
+    0% {
+        opacity: 0;
+        transform: translateX(200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animateC   {
+    opacity: 0;
+    animation: animateC 0.5s forwards;
+    animation-delay: 1.7s;
+}
+
+@keyframes animateC  {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.box1    {
+    width: 100%;
+    height: 100vh;
+}
+
+.boximage   {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.boximagewrap   {
+    width: 100%;
+    height: 1000vh;
+    transform: translateY(0);
+    animation: slider 27s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slider {
+    0%  {
+        transform: translateY(0);
+    }
+    9%  {
+        transform: translateY(0);
+    }
+    10%  {
+        transform: translateY(-100vh);
+    }
+    19%  {
+        transform: translateY(-100vh);
+    }
+    20%  {
+        transform: translateY(-200vh);
+    }
+    29%  {
+        transform: translateY(-200vh);
+    }
+    30%  {
+        transform: translateY(-300vh);
+    }
+    39%  {
+        transform: translateY(-300vh);
+    }
+    40%  {
+        transform: translateY(-400vh);
+    }
+    49%  {
+        transform: translateY(-400vh);
+    }
+    50%  {
+        transform: translateY(-500vh);
+    }
+    59%  {
+        transform: translateY(-500vh);
+    }
+    60%  {
+        transform: translateY(-600vh);
+    }
+    69%  {
+        transform: translateY(-600vh);
+    }
+    70%  {
+        transform: translateY(-700vh);
+    }
+    79%  {
+        transform: translateY(-700vh);
+    }
+    80%  {
+        transform: translateY(-800vh);
+    }
+    89%  {
+        transform: translateY(-800vh);
+    }
+    90%  {
+        transform: translateY(-900vh);
+    }
+    99%  {
+        transform: translateY(-900vh);
+    }
+    100%  {
+        transform: translateY(-1000vh);
+    }
+}
+
+.boximage2   {
+    width: 100%;
+    height: 100vh;
+}
+
+.imagestyle {
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.text1  {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 10rem;
+}
+
+.text2  {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.animate1   {
+    animation: animateText 5s;
+    animation-iteration-count: 6;
+}
+
+@keyframes animateText  {
+    0%  {
+        font-family: 'Indie Flower', cursive;
+    }
+    25% {
+        font-family: 'Dancing Script', cursive;
+    }
+    50% {
+        font-family: 'Abril Fatface', cursive;
+    }
+    75% {
+        font-family: 'Gloria Hallelujah', cursive;
+    }
+    100% {
+        font-family: 'Indie Flower', cursive;
+    }
+}
+
+.box2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: show 1s forwards;
+    animation-delay: 28s;
+    opacity: 0;
+}
+
+@keyframes show {
+    from    {
+        opacity: 0;
+        transform: scaleX(0) scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1) scaleY(1);
+    }
+}
