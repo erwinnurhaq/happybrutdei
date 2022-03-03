@@ -9,6 +9,7 @@ body{
     color: #222;
 }
 
+
 .animateA   {
     opacity: 0;
     animation: animateA 0.5s forwards;
